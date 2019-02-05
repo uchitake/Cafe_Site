@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Roman</title>
+    <link rel="stylesheet" href="CSS/Cafe.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/jquery.fullPage.css">
+    <link rel="stylesheet" href="CSS/Balkan-Style.sass">
+    <script src="JS/jQuery-v3.3.1.js"></script>
+    <script src="JS/jquery.fullPage.min.js"></script>
+    <script src="JS/Balkan-Style.js"></script>
+    <script src="JS/Cafe.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <a id="title" href="#1page">
+            <img class="Header_Logo" src="CSS/images/Header_Logo_4.png" alt="">
+        </a>
+        <ul id="menu">
+            <li data-menuanchor="1page" class="active button "><img src="CSS/images/%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E8%B1%86%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90.png" alt=""><span class="Active_line"><a href="#1page">Top Page</a></span></li>
+            <li data-menuanchor="2page" class="button "><img src="CSS/images/%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E8%B1%86%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90.png" alt=""><span class="Active_line"><a href="#2page">About</a></span></li>
+            <li data-menuanchor="3page" class="button "><img src="CSS/images/%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E8%B1%86%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90.png" alt=""><span class="Active_line"><a href="#3page">Coffe</a></span></li>
+            <li data-menuanchor="4page" class="button "><img src="CSS/images/%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E8%B1%86%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90.png" alt=""><span class="Active_line"><a href="#4page">Gallery</a></span></li>
+        </ul>
+        <div id="slide_menu_btn">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+            <span class="menu">MENU</span>
+            <span class="close">CLOSE</span>
+        </div>
+    </div>
+    <main>
+        <ul id="sections">
+            <!--トップページ-->
+            <li id="Top_Page" class="section">
+                <img Class="Logo" src="CSS/images/Main_Logo_3.png" alt="">
+            </li>
+            <!--Aboutページ-->
+            <li id="About_Page" class="section">
+                <div id="About_imgs">
+                    <p>
+                        <span class="Page_title">
+                            About
+                        </span>
+                    </p>
+                    <p class="About_txt">
+                        木目がきれいに現れたウッド調の店内。<br>
+                        最新の音楽やエンターテイメントを楽しみながら、café Romanでゆっくりと開放的な時間をお過ごしください。
+                    </p>
+                    <div class="under_txt"></div>
+                    <div class="img_area">
+                        <img class="A_img img_1" src="CSS/images/About1.jpg" alt="">
+                        <div class="under_img under_1"></div>
+                        <img class="A_img img_2" src="CSS/images/About3.jpg" alt="">
+                        <div class="under_img under_2"></div>
+                        <img class="A_img img_3" src="CSS/images/About2.jpg" alt="">
+                        <div class="under_img under_3"></div>
+                    </div>
+
+                </div>
+            </li>
+            <!--Coffeページ-->
+            <li id="Coffe_Page" class="section">
+                <div id="Menu_list">
+                    <ul id="Menus_1">
+                        <li><span class="M_name">Coffe1</span><span class="M_money">¥300</span></li>
+                        <li><span class="M_name">Coffe1</span><span class="M_money">¥300</span></li>
+                        <li><span class="M_name">Coffe1</span><span class="M_money">¥300</span></li>
+                        <li><span class="M_name">Coffe1</span><span class="M_money">¥300</span></li>
+                        <li><span class="M_name">Coffe1</span><span class="M_money">¥300</span></li>
+                    </ul>
+                    <ul id="Menus_2">
+                        <li><span class="M_name">Coffe1</span><span class="M_money">¥300</span></li>
+                        <li><span class="M_name">Coffe1</span><span class="M_money">¥300</span></li>
+                        <li><span class="M_name">Coffe1</span><span class="M_money">¥300</span></li>
+                        <li><span class="M_name">Coffe1</span><span class="M_money">¥300</span></li>
+                        <li><span class="M_name">Coffe1</span><span class="M_money">¥300</span></li>
+                    </ul>
+                </div>
+            </li>
+            <!--Galleryページ-->
+            <li id="Gallery_Page" class="section">
+            </li>
+        </ul>
+    </main>
+    <div id="Navi_Area">
+        <ul>
+            <li data-menuanchor="1page" class="active S_navi"><span class="Active_line"><a href="#1page">Top Page</a></span></li>
+            <li data-menuanchor="2page" class="S_navi "><span class="Active_line"><a href="#2page">About</a></span></li>
+            <li data-menuanchor="3page" class="S_navi "><span class="Active_line"><a href="#3page">Coffe</a></span></li>
+            <li data-menuanchor="4page" class="S_navi "><span class="Active_line"><a href="#4page">Gallery</a></span></li>
+        </ul>
+    </div>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

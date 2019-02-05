@@ -1,0 +1,419 @@
+body {
+    width: 100%;
+    background-color: #eaeaea;
+}
+
+#Navi_Area {
+    width: 312px;
+    height: 100%;
+    transition: all 0.2s;
+    transform: translate(312px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgb(104, 60, 17);
+    border-style: solid;
+    border-width: 0px 0px 0px 3px;
+    border-color: #613e28;
+}
+
+#Navi_Area ul {
+    margin: 130px 0 0 30px;
+}
+
+#Navi_Area.open {
+    transform: translate(0);
+}
+
+.S_navi {
+    margin: 20px 0;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #ffffff;
+    width: 220px;
+}
+
+.S_navi a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#title {
+    height: 95px;
+    float: left;
+    text-align: center;
+    font-family: 'ScotchRomanMTW01-Italic_706945';
+    color: #888;
+    text-decoration: none;
+}
+
+#header {
+    position: absolute;
+    z-index: 70;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 3px 0px 10px 0px;
+    border-color: #613e28;
+}
+
+
+
+#slide_menu_btn {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    width: 52px;
+    color: rgb(104, 60, 17);
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    z-index: 1001;
+    text-align: center;
+    outline: none;
+}
+
+/*   ハンバーガーボタン3本線   */
+#slide_menu_btn span.bar {
+    display: block;
+    height: 3px;
+    background-color: rgb(104, 60, 17);
+    margin: 10px 0;
+    transition: all 0.2s;
+    transform-origin: 0 0;
+}
+
+#slide_menu_btn .close {
+    letter-spacing: 0.08em;
+    display: none;
+}
+
+#slide_menu_btn .menu {
+    display: block;
+}
+
+/*  メニューアクティブ時  */
+#slide_menu_btn.active span.bar {
+    width: 60px;
+}
+
+#slide_menu_btn.active .bar1 {
+    transform: rotate(26deg);
+}
+
+#slide_menu_btn.active .bar2 {
+    opacity: 0;
+}
+
+#slide_menu_btn.active .bar3 {
+    transform: rotate(-26deg);
+}
+
+#slide_menu_btn.active .menu {
+    display: none;
+}
+
+#slide_menu_btn.active .close {
+    display: block;
+}
+
+
+@media screen and (min-width: 1050px) {
+
+    #slide_menu_btn {
+        display: none;
+    }
+
+    #menu {
+        float: right;
+        margin-right: 20px;
+    }
+
+    #menu li {
+        float: left;
+        font-size: 30px;
+        margin: 31px 15px 0px 0px;
+        padding: 1px 0px;
+        list-style-type: none;
+    }
+}
+
+#acMenu dt {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: #5bc0de 1px solid;
+    cursor: pointer;
+}
+
+#acMenu dd {
+    background: #d9534f;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: #5bc0de 1px solid;
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+
+    #menu {
+        float: left;
+        margin-left: 130px;
+        display: none;
+    }
+
+    #menu li {
+        float: left;
+        font-size: 30px;
+        margin: 28px 15px 0px 0px;
+        padding: 1px 0px;
+        list-style-type: none;
+        background-color: black;
+    }
+}
+
+
+#menu li .Active_line {
+    border-bottom: solid 2px rgb(104, 60, 17);
+}
+
+#menu img {
+    width: 35px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#menu li a {
+    color: rgb(104, 60, 17);
+    padding: 0 15px;
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#menu li.active a {
+    background: rgb(104, 60, 17);
+    color: rgb(255, 255, 255);
+}
+
+main {
+    margin: 0 auto;
+}
+
+.section {
+    width: 100%;
+    background-color: #ff6767;
+    border: solid 2px #000000;
+}
+
+
+#Top_Page {
+    background-image: url(images/Back_Img4.jpg);
+    background-size: cover;
+    background-position: 0 90px;
+    text-align: center;
+}
+
+#About_Page {
+    background-image: url(images/Back_Img6.jpg);
+    background-size: cover;
+    background-position: 0 90px;
+}
+
+#Coffe_Page {
+    background-image: url(images/Back_Img11.jpg);
+    background-size: cover;
+    background-position: 0 90px;
+}
+
+.Page_title {
+    font-size: 50px;
+    font-family: auto;
+    font-weight: bold;
+    color: rgb(104, 60, 17);
+    margin: 0 0 0 20px;
+    /*    text-shadow: 2px 2px 0px rgb(185, 185, 185);*/
+}
+
+
+#About_imgs {
+    width: 80%;
+    height: 600px;
+    background: #ffffffa1;
+    border-radius: 15px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.About_txt {
+    width: 90%;
+    margin: 0 20px;
+    background-color: rgba(227, 165, 92, 0.66);
+    padding: 15px;
+    color: white;
+    text-shadow: 1px 1px 3px rgb(6, 6, 6);
+    position: relative;
+    z-index: 100;
+}
+
+.under_txt {
+    /*
+    width: 852px;
+    height: 80px;
+    background-color: rgba(227, 165, 92, 0.66);
+    position: absolute;
+    top: 311px;
+    left: 135px;
+*/
+}
+
+
+/*Caffeページ*/
+/*____________________________________*/
+
+#Menu_list {
+    width: 800px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+
+    #Menus_1 {
+        width: 300px;
+        float: left;
+        margin: 0 30px 0 50px;
+    }
+
+    #Menus_1 li {
+        color: white;
+        font-size: 25px;
+        margin: 20px 0 0 0;
+        border-bottom: solid 2px rgb(255, 255, 255);
+    }
+
+    #Menus_2 {
+        width: 300px;
+        float: left;
+        margin: 0 30px 0 50px;
+    }
+
+    #Menus_2 li {
+        color: white;
+        font-size: 25px;
+        margin: 20px 0 0 0;
+        border-bottom: solid 2px rgb(255, 255, 255);
+    }
+
+    .M_money {
+        float: right;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    #Menus_1 {
+        width: 300px;
+        margin: 0 30px 0 250px;
+    }
+
+    #Menus_1 li {
+        color: white;
+        font-size: 25px;
+        margin-top: 10px;
+        border-bottom: solid 2px rgb(255, 255, 255);
+    }
+
+    #Menus_2 {
+        width: 300px;
+        margin: 0 30px 0 250px;
+    }
+
+    #Menus_2 li {
+        color: white;
+        font-size: 25px;
+        margin-top: 10px;
+        border-bottom: solid 2px rgb(255, 255, 255);
+    }
+
+    .M_money {
+        float: right;
+    }
+}
+
+/*____________________________________*/
+
+
+.A_img {
+    float: left;
+}
+
+.img_area {
+    margin: 50px auto;
+    width: 1000px;
+    padding-left: 5%;
+}
+
+.img_area img {
+    width: 220px;
+    z-index: 1000;
+    position: relative;
+}
+
+
+.img_1 {
+    margin: 60px 0 0 0;
+}
+
+.img_2 {
+    margin: 80px 0 0 80px;
+}
+
+.img_3 {
+    margin: 0px 0 0 80px;
+}
+
+.under_img {
+
+    position: absolute;
+}
+
+.under_1 {
+    width: 220px;
+    height: 330px;
+    background-color: rgb(104, 60, 17);
+    margin: 20px 0 0 40px;
+}
+
+.under_2 {
+    width: 220px;
+    height: 170px;
+    background-color: rgb(227, 165, 92);
+    margin: 120px 0 0 340px;
+}
+
+.under_3 {
+    width: 220px;
+    height: 330px;
+    background-color: rgb(255, 233, 157);
+    margin: 40px 0 0 640px;
+}
+
+img.Header_Logo {
+    width: 280px;
+}
+
+img.Logo {
+    width: 800px;
+}
