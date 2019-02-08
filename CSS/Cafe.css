@@ -213,11 +213,13 @@ main {
 
 .section {
     width: 100%;
-    background-color: #ff6767;
+    background-color: #ff972c;
     border: solid 2px #000000;
 }
 
 
+
+/*____________________________________*/
 #Top_Page {
     background-image: url(images/Back_Img4.jpg);
     background-size: cover;
@@ -225,23 +227,18 @@ main {
     text-align: center;
 }
 
-#About_Page {
-    background-image: url(images/Back_Img6.jpg);
-    background-size: cover;
-    background-position: 0 90px;
-}
+#About_Page {}
 
-#Coffe_Page {
-    background-image: url(images/Back_Img11.jpg);
-    background-size: cover;
-    background-position: 0 90px;
-}
+#Coffe_Page {}
+
+#Gallery_Page {}
+
+/*____________________________________*/
 
 .Page_title {
     font-size: 50px;
     font-family: auto;
     font-weight: bold;
-    color: rgb(104, 60, 17);
     margin: 0 0 0 20px;
     /*    text-shadow: 2px 2px 0px rgb(185, 185, 185);*/
 }
@@ -249,17 +246,20 @@ main {
 
 #About_imgs {
     width: 80%;
-    height: 600px;
-    background: #ffffffa1;
-    border-radius: 15px;
-    padding: 50px;
+    height: 100%;
+    background: #ffffff;
+    padding: 40px;
     margin: 0 auto;
+}
+
+#About_imgs .Page_title {
+    color: rgb(104, 60, 17);
 }
 
 .About_txt {
     width: 90%;
     margin: 0 20px;
-    background-color: rgba(227, 165, 92, 0.66);
+    background-color: rgba(156, 81, 5, 0.68);
     padding: 15px;
     color: white;
     text-shadow: 1px 1px 3px rgb(6, 6, 6);
@@ -283,7 +283,10 @@ main {
 /*____________________________________*/
 
 #Menu_list {
-    width: 800px;
+    width: 80%;
+    height: 100%;
+    background: #ffffff;
+    padding: 40px;
     margin: 0 auto;
 }
 
@@ -360,7 +363,7 @@ main {
 }
 
 .img_area {
-    margin: 50px auto;
+    margin: 40px auto;
     width: 1000px;
     padding-left: 5%;
 }
@@ -373,7 +376,7 @@ main {
 
 
 .img_1 {
-    margin: 60px 0 0 0;
+    margin: 50px 0 0 0;
 }
 
 .img_2 {
@@ -393,7 +396,7 @@ main {
     width: 220px;
     height: 330px;
     background-color: rgb(104, 60, 17);
-    margin: 20px 0 0 40px;
+    margin: 10px 0 0 40px;
 }
 
 .under_2 {
@@ -416,4 +419,30 @@ img.Header_Logo {
 
 img.Logo {
     width: 800px;
+}
+
+
+/*Galleryページ*/
+
+#Gallery_Area {
+    margin: 0 auto;
+    width: 80%;
+    height: 600px;
+    background: #ffffff;
+    padding: 30px 50px;
+}
+
+#Gallery_Area .Page_title {
+    color: rgb(104, 60, 17);
+}
+
+#Gallery_List {
+    margin: 10px auto;
+    width: 775px;
+}
+
+.strip img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
